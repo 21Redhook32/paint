@@ -1,0 +1,136 @@
+@import "./variables";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+  z-index: 2;
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-left: 10px;
+
+    .buttons {
+      display: flex;
+      .btn {
+        height: 32px;
+        width: 32px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-size: cover;
+
+        &--active {
+          border: 1px solid #e7e7e7;
+          border-radius: 5px;
+        }
+
+        &--brush {
+          background: url("../assets/img/brush.png")no-repeat  center center;
+        }
+
+        &--eraser{
+          background: url("../assets/img/eraser.png")no-repeat  center center;
+        }
+
+        &--pipette{
+          background: url("../assets/img/pipette.png")no-repeat  center center;
+        }
+
+        &--line{
+          background: url("../assets/img/line.png")no-repeat  center center;
+        }
+
+        &--rect {
+          background: url("../assets/img/rect.png")no-repeat  center center;
+        }
+
+        &--oval {
+          background: url("../assets/img/oval.png")no-repeat  center center;
+        }
+
+        &--line-width {
+          background: url("../assets/img/line-width.png")no-repeat  center center;
+        }
+
+        &--undo{
+          background: url("../assets/img/undo.png")no-repeat  center center;
+        }
+
+        &--redo{
+          background: url("../assets/img/redo.png")no-repeat  center center;
+        }
+
+        &--save{
+          background: url("../assets/img/save.png")no-repeat  center center;
+        }
+
+        &--trash{
+          background: url("../assets/img/trash.png")no-repeat  center center;
+        }
+
+        &--triangle{
+          background: url("../assets/img/triangle.png")no-repeat  center center;
+        }
+
+        &--paint-bucket{
+          background: url("../assets/img/paintBucket.png")no-repeat  center center;
+        }
+
+      }
+
+    }
+
+    .label {
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    .select {
+      height: 32px;
+      position: relative;
+
+      &__icon {
+        height: 32px;
+        width: 32px;
+        border: none;
+        outline: none;
+        background-size: cover;
+        background: url("../assets/img/line-width.png")no-repeat  center center;
+      }
+
+      select {
+        position: absolute;
+        border: none;
+        background: none;
+        outline: none;
+        left: -5px;
+        top: 27px;
+      }
+    }
+
+    .colors {
+      display: flex;
+
+      .picker {
+        height: 32px;
+        width: 32px;
+        background: none;
+        border: none;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
